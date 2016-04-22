@@ -187,10 +187,9 @@ git treegraph   # alias.treegraph = log --graph --decorate --abbrev-commit --all
 ## WORKING WITH GITHUB + SOURCETREE
 ```bash
 # // **ON GITHUB: CREATE EMPTY xelab REPO
-# // **ON GITHUB: ADD DAVIDE AS COLLABORATOR
 git checkout master
-cp ../slides.pptx
-cp ../git-demo-c.md
+cp ../slides.pptx .
+cp ../git-demo-c.md .
 git add .
 git commit -m "add demo commands and slides"
 
@@ -203,7 +202,7 @@ git remote -v
 git checkout master
 git fetch origin
 git merge origin/master   
-# IT'S === TO THIS SIMPLE ONE-LINE COMMAND
+# IT'S === TO THIS SIMPLE ONE-LINE COMMAND    
 git pull origin
 
 # SEND-PUBLISH LOCAL CHANGE TO REMOTE
@@ -214,6 +213,7 @@ git push -u origin master
 
 ### CENTRALIZED WORKFLOW (ONLY FOR INTERAL USE / SMALL TEAM)
 ```bash
+# //**ON GITHUB: ADD DAVIDE AS COLLABORATOR
 # //**PC DAVIDE
 # CLONE THE MAIN REPO TO LOCAL DISK
 git clone https://github.com/dmorosinotto/xelab.git
